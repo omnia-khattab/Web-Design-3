@@ -1,0 +1,327 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'segoe ui light';
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    /*color: #4e4e4e;*/
+    font-family: system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: #1e1e1e;
+}
+.home{
+    background: url(../images/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    color: white;
+}
+.home .Animation-Text::before{
+    content:'' ;
+animation: textAnimation 3s infinite  ;
+position: absolute;
+left: 35%;
+}
+.home .Animation-Text{
+    font-size: 2.5rem;
+}
+/*.home .tt{
+    padding-top: 14rem;
+}*/
+@keyframes textAnimation{
+    
+    0%{content :''}
+    10%{content :'C'}
+    20%{content :'CE'}
+    30%{content:'CEO' ;}
+    35%{content:'CEO ' ;}
+    40%{content:'CEO D' ;}
+    50%{content: 'CEO De';}
+    60%{content: 'CEO Dev';}
+    65%{content: 'CEO DevF';}
+    75%{content: 'CEO DevFo';}
+    85%{content: 'CEO DevFol';}
+    95%{content: 'CEO DevFoli';}
+    100%{content:'CEO DevFolio';}
+}
+.navbar-brand{
+    color: white !important;
+    font-weight: 900;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.under-nav{
+    position: relative;
+}
+.under-nav::after{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    margin: auto;
+    left: 9px;
+    bottom: -5px;  
+}
+header .layer-over{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    
+}
+.home h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: white !important;
+}
+.section1{
+ color: #4e4e4e;
+}
+.section1 .container{
+    padding: 4rem 0;
+    margin: 4rem auto;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.title-left:before{ 
+    content:'';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+.title-left{
+    font-size: 2rem;
+    position: relative;
+}
+.aboutme-box{
+    margin-bottom: 3rem;
+}
+.aboutme p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-right: 2.5rem;
+    
+}
+.right-title{
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.skills .percentage{
+    float: right;
+}
+.title-down{
+    position: relative;
+}
+.title-down::after{
+    content: '';
+    position: absolute;
+    background-color: #0078ff;
+    width: 35px;
+    height: 4px;
+    margin: auto;
+    left: 48%;
+    bottom: -18px;
+    
+    
+}
+.services-box{
+    background-color: white;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.services-box h2{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4rem 0;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #0078ff;
+    margin: 1rem auto;
+    text-align: center;
+    padding-top: 1rem; /* !!!!!!!!  */
+    transition: border-color 1s,  background-color 1s , color 1s;
+}
+
+.section2 .services-box:hover .icon{
+    border-color: #cde1f8;
+    background-color: #0078ff;
+    color: white;
+}
+.section3{
+    background: linear-gradient(rgba(0,120,255, 0.7),rgba(0,120,255, 0.7)),url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.section3 .counter-box{
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin: 4rem auto;
+}
+.section3 .counter-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #cde1f8;
+    margin: 1rem auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+.section4 .porfolio-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.section4 .work-content{
+    padding: 2rem 3% 1rem 4%;
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.section4 .webCategory{
+    color: #0078ff;
+}
+.section4 .plus-icon{
+    float:right;
+    font-size: 2.5rem;
+    color: #0078ff;
+}
+.section4 .porfolio-box img{
+    width: 100%;
+    transition: transform 2s ease-in-out;
+}
+.section4 .porfolio-box:hover img{
+   transform:  scale(1.2,1.2);
+}
+
+/* Section5*/
+
+.section5{
+    background: linear-gradient(rgba(0,120,255, 0.7),rgba(0,120,255, 0.7)),url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.slider{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.section5 .sec5-icon{
+    width: 60px;
+    height: 60px;
+    color: #0078ff;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+/**/
+
+.section6 .blog-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.card-category{
+    text-align: center;
+    bottom: 105%;
+    right: 35%;
+    line-height: 25px;
+    overflow: hidden;
+    width: 100px;
+    background-color: #0078ff;
+    border-radius: 5px;
+}
+.card-category h6{
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-top: 0.2rem;
+}
+.section6 a{
+   text-decoration: none;
+   color: #1e1e1e;
+}
+.section6 .card-footer :hover a{
+    color: #0078ff;
+}
+.section6 .footer-avatar{
+    width: 32px;
+    height: 32px; 
+}
+.section6 .post-date{
+    float: right;
+}
+
+/*         section7 Contact      */
+
+.section7{
+
+    background: linear-gradient(rgba(0,120,255, 0.7),rgba(0,120,255, 0.7)),url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.button-rouded{ 
+border-radius: 5rem;
+}
+.button-big{
+    padding: .9rem 2.3rem;
+    font-size: 1.2rem;
+    border-color: #cde1f8;
+}
+.section7 .contact-info-details i{
+    color: #0078ff;
+}
+.section7 .social-icons i{
+    width: 50px;
+    height: 50px;
+    color:black;
+    padding: 14px;
+    background-color:white;
+    border-radius: 50%;
+    font-size: larger;
+    border:3px solid  #0078ff;
+}
+.section7 .social-icons :hover {
+    color:white;
+    background-color:#0078ff;
+    border-color: #cde1f8;
+}
+.section7 .footerparagraph{
+color: #fff;
+}
+
